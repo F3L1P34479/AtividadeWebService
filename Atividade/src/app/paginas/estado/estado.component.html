@@ -1,0 +1,43 @@
+<!--
+<div class="container">
+  <br/>
+  <form>
+    <div class="form-group">
+      <label >Nome</label>
+      <input class="form-control" type="text" name="nome" value="" [(ngModel)]= 'estado.nome' >
+    </div>
+    <div class="form-group">
+      <label >Sigla</label>
+      <input class="form-control" type="text" name="sigla" value="" [(ngModel)]= 'estado.sigla' >
+    </div>
+    <button class="btn btn-info" type="button" name="button" (click)="adicionar()">Add</button>
+  </form>
+  <br/>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Sigla</th>
+        <th scope="col">Alterar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let est of estado$ | async">
+        <td>{{ est.nome }}</td>
+        <td>{{ est.sigla }}</td>
+        <td>
+          <button class="btn btn-info" type="button" name="button" (click)="alterar(est)">
+            <i class="fas fa-edit"></i>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-info" type="button" name="button" (click)="excluir(est.id)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->

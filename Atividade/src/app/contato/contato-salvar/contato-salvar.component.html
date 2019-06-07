@@ -1,0 +1,42 @@
+<div class="container">
+  <br/>
+  <form>
+    <div class="form-group">
+      <label >Nome</label>
+      <input class="form-control" type="text" name="nome" value="" [(ngModel)]= 'contato.nome' >
+    </div>
+    <div class="form-group">
+      <label >telefone</label>
+      <input class="form-control" type="text" name="telefone" value="" [(ngModel)]= 'contato.telefone' >
+    </div>
+    <button class="btn btn-info" type="button" name="button" (click)="salvar()">Add</button>
+  </form>
+  <br/><!--
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Alterar</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let est of estado$ | async">
+        <td>{{ cont.nome }}</td>
+        <td>{{ cont.telefone }}</td>
+        <td>
+          <button class="btn btn-info" type="button" name="button" (click)="alterar(cont)">
+            <i class="fas fa-edit"></i>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-info" type="button" name="button" (click)="excluir(cont.id)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+-->
+</div>
